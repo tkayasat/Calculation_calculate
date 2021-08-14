@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:aandroid="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/gradient"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".MainActivity">
 
 
     <TextView
@@ -25,12 +28,12 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp">
 
-
         <Button
+
             android:id="@+id/btn_clean"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="C"
+            android:text="@string/_C"
             android:textSize="25sp" />
 
         <Button
@@ -38,7 +41,7 @@
             android:layout_marginLeft="10dp"
             android:layout_span="2"
             android:gravity="center"
-            android:text="Del"
+            android:text="@string/_Del"
             android:textSize="25sp" />
 
         <Button
@@ -47,7 +50,7 @@
             android:layout_marginRight="10dp"
             android:layout_span="1"
             android:gravity="center"
-            android:text="/"
+            android:text="@string/_div"
             android:textSize="25sp" />
 
     </TableRow>
@@ -61,21 +64,21 @@
             android:id="@+id/btn_7"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="7"
+            android:text="@string/_7"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_8"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="8"
+            android:text="@string/_8"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_9"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="9"
+            android:text="@string/_9"
             android:textSize="25sp" />
 
         <Button
@@ -83,7 +86,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="*"
+            android:text="@string/multi"
             android:textSize="25sp" />
     </TableRow>
 
@@ -96,21 +99,21 @@
             android:id="@+id/btn_4"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="4"
+            android:text="@string/_4"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_5"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="5"
+            android:text="@string/_5"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_6"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="6"
+            android:text="@string/_6"
             android:textSize="25sp" />
 
         <Button
@@ -118,7 +121,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="+"
+            android:text="@string/add"
             android:textSize="25sp" />
     </TableRow>
 
@@ -131,28 +134,30 @@
             android:id="@+id/btn_1"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="1"
+            android:text="@string/_1"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_2"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="2"
+            android:text="@string/_2"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/btn_3"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="3"
+            android:text="@string/_3"
             android:textSize="25sp" />
 
         <Button
-            android:id="@+id/btn_minus"
+            aandroid:id="@+id/btn_minus"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="-"
+            android:text="@string/dec"
             android:textSize="25sp" />
 
     </TableRow>
@@ -168,7 +173,7 @@
             android:layout_marginLeft="10dp"
             android:layout_span="2"
             android:gravity="center"
-            android:text="0"
+            android:text="@string/_0"
             android:textSize="25sp" />
 
         <Button
@@ -176,7 +181,7 @@
             android:layout_marginLeft="10dp"
             android:layout_span="1"
             android:gravity="center"
-            android:text="."
+            android:text="@string/Dot"
             android:textSize="25sp" />
 
         <Button
@@ -185,7 +190,7 @@
             android:layout_marginRight="10dp"
             android:layout_span="1"
             android:gravity="center"
-            android:text="="
+            android:text="@string/equal"
             android:textSize="25sp" />
     </TableRow>
 </TableLayout>
